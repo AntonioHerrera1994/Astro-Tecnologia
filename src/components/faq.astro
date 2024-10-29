@@ -1,0 +1,48 @@
+---
+import '../styles/faq.css'
+import {Image} from 'astro:assets';
+import FaqImage from '../assets/faq-1.webp';
+---
+
+<section class="faq">
+<div class="faq-cont">
+    <div class="faq-grid">
+
+      <div class="faq-izq">
+        <Image src={FaqImage} alt="Plankton-Logo" class="faq-img" 
+        />
+      </div>
+
+        <div class="accordion">
+          <h1>
+            Preguntas <br>Frecuentes
+          </h1>
+            <div class="accordion-item active">
+              <button class="accordion-button">¿Qué necesito para abrir una wallet en Plankton Wallet?</button>
+              <div class="accordion-content">
+                Para crear tu wallet en Plankton Wallet, solo necesitas proporcionar algunos datos básicos para la verificación de identidad según nuestros protocolos KYC. El proceso es rápido, digital y totalmente seguro, permitiéndote empezar a gestionar tus finanzas en pocos minutos.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button">¿Cómo asegura Plankton Wallet la seguridad de mis transacciones?</button>
+              <div class="accordion-content">
+                En Plankton Wallet, tomamos la seguridad muy en serio. Utilizamos tecnología de cifrado de última generación, además de implementar políticas de Anti-Lavado de Dinero (AML) y sistemas antifraude. Nuestros protocolos de seguridad están diseñados para monitorear y proteger tus transacciones continuamente, identificando y mitigando cualquier riesgo de manera efectiva.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button">¿Puedo integrar Plankton Wallet con otros servicios financieros?</button>
+              <div class="accordion-content">
+                
+Sí, Plankton Wallet ofrece amplias opciones de integración con otros servicios financieros. Nuestra plataforma permite conectar fácilmente una variedad de sistemas de pagos y APIs de terceros, lo que te proporciona una increíble flexibilidad para ampliar las capacidades de tu wallet según tus necesidades.
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+</div>
+</section>
+
+<script>
+    import "../scripts/acordeon.js";
+</script>

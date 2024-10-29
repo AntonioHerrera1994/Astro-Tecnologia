@@ -1,0 +1,55 @@
+/********** Global **********/
+.entradas{
+    background-color: #0F1416;
+    padding-bottom: 2.6rem;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-top: .5rem;
+}
+
+.entradas-cont{
+    margin: 0 auto;
+    overflow: hidden;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.entradas-grid{
+    margin-top: 2rem;
+    padding: 2rem;
+    display:grid;
+    grid-template-columns: 66% 34%;
+        gap: 4rem; 
+}
+
+/********** Entradas izquierda **********/
+
+.blog-ent a{
+    text-decoration: none;
+    color: white;
+}
+
+/********** Entradas derecha **********/
+
+.categorias{
+    position: sticky;
+    top: 20px;
+    background-color: #191f26;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-right: 8rem;
+}
+
+.categorias h5{
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+.categorias ul{
+    list-style:disc;
+    line-height: 2.5rem;
+}

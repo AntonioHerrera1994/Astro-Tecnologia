@@ -1,0 +1,248 @@
+
+/********** Anmiaciones *********/
+.animacionh4{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.animacionh4.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+.animacionh1{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.animacionh1.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+.animacionp{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.animacionp.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+.animacionul{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.animacionul.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+.animaciona{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.animaciona.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+/*********** Global **********/
+h1,p, a, ul{
+    color: white;
+}
+
+.enfoque{
+    background-color: #0F1416;
+    padding-bottom: 1rem;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-top: 2rem;
+    z-index: 5;
+}
+
+.enfoque-cont{
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 70px;
+}
+
+.enfoque-grid{
+    padding: 2rem;
+    display:grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+}
+
+
+/*********** Imagen izquierda **********/
+.enfoque-izquierda{
+    width: 100%;
+    height: 70%;
+    
+}
+
+
+.enfoque-img{
+    position: absolute;
+    width: 44%;
+    height: 44%;
+    z-index: 2;
+    margin-top: 8rem;
+ }
+
+/*********** Texto Derecha **********/
+
+.enfoque-derecha{
+    background-color: #191f26;
+    padding:10rem;
+    padding-bottom: 7rem;
+    margin-left: -15rem;
+    z-index: 1;
+    margin-right: -1.9rem;
+}
+
+.enfoque-derecha h4 {
+    font-size: .78rem;
+    margin-bottom: -1rem;
+    color: #ffffff;
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+
+.enfoque-derecha p {
+    font-size: .97rem;
+  font-weight: normal;
+    color: #ffffffa0;
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.enfoque-derecha h1 {
+    font-size: 3.5rem;
+    margin-bottom: -1rem;
+    color: white;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+}
+ul{
+    list-style: none;
+    margin-bottom: 4rem;
+    color: white!important;
+}
+
+li{
+    line-height: 2rem;
+}
+
+.enfoque-txt{
+    margin-top: -7rem;
+    margin-left: 9rem;
+    margin-right: -1rem;
+}
+
+.bi-check-lg{
+    font-size: 1.3rem;
+    margin-right: .5rem;
+    
+}
+
+.enfoque-txt a{
+    border: solid;
+    color: black;
+    border-width: 1px;
+    border-radius: .9rem;
+    border-color: #00f0f1;
+    padding: 1.1rem 2.1rem 1.1rem 2.1rem;
+    background-color: #00f0f1;
+    font-weight: 500;
+    font-size: .97rem;
+}
+
+/********* Movil **********/
+@media screen and (min-width:300px) and (max-width:800px) {
+    
+        /*********** Global **********/
+        .enfoque{
+        margin-top: -7rem;
+        }
+
+    .enfoque-cont{
+        width: auto;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+
+    .enfoque-grid{
+        padding: 2rem;
+        display:grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+
+    /*********** Imagen izquierda **********/
+    .enfoque-img{
+        position: relative;
+        width: 133%;
+        height: 115%;
+        margin-top: 1rem;
+        margin-left: -3.2rem;
+     }
+
+
+  /*********** Texto Derecha **********/
+  .enfoque-derecha{
+    padding:2rem;
+    padding-bottom: 4rem;
+    margin-left: -3.6rem;
+    margin-right: -3.2rem;
+}
+
+.enfoque-txt{
+    margin-top: 0rem;
+    margin-left: 0rem;
+ 
+}
+
+.enfoque-derecha h1 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.enfoque-derecha h4 {
+    font-size: .8rem;
+}
+
+.enfoque-derecha p {
+    font-size: .9rem;
+    margin-top: -2rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.7rem;
+}
+
+li{
+    font-size: .9rem;
+    line-height: 2rem;
+}
+
+ul{
+    margin-bottom: 2.2rem;
+}
+
+.enfoque-txt a{
+    padding: .9rem 2rem .9rem 2rem;
+    font-weight: 500;
+    font-size: .8rem;
+
+}
+
+
+}

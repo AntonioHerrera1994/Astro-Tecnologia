@@ -1,0 +1,56 @@
+---
+import '../styles/entradas.css';
+const blogs = await Astro.glob('../pages/*/*.mdx');
+
+const sortedFiles = blogs.sort((a, b) => {
+  const bDate = new Date(a.frontmatter.pubDate);
+  const aDate = new Date(b.frontmatter.pubDate);
+
+  return aDate - bDate;
+});
+---
+
+<section class="entradas">
+    <div class="entradas-cont">
+        <div class="entradas-grid">
+
+            <div class="grid-blog-izq">
+                <ul class="blogs-ent">
+                    {blogs.map((blog) => {
+                      // Split description into words and limit to 10
+                      const words = blog.frontmatter.description.split(/\s+/);
+                      const limitedDescription = words.slice(0, 10).join(' ');
+              
+                      return (
+                        <li>
+                          <article class="blog-ent">
+                            
+                            <img src={blog.frontmatter.image.url} alt="blog.frontmatter.image.alt" width="100%" />
+                            <a href={blog.url} class=""><h2>{blog.frontmatter.title}</h2></a>
+                            <h4>{blog.frontmatter.categoria} | {blog.frontmatter.date}</h4>
+                            <p>{limitedDescription} ...</p>
+                            {/* Optionally add "..." to indicate truncated description */}
+                            {words.length > 10 && <p></p>}
+                          </article>
+                        </li>
+                      );
+                    })}
+                  </ul>
+            </div>
+            
+            <div class="grid-blog-der">
+
+                <div class="categorias">
+                    <h5>Categorías</h5>
+                    <ul>
+                        <li>Crypto</li>
+                        <li>Finanzas</li>
+                        <li>Tecnología</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>

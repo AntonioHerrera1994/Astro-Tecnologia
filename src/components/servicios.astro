@@ -1,0 +1,113 @@
+---
+import '../styles/servicios.css'
+---
+
+<section class="servicios">
+    <div class="servicios-cont">
+
+        <div class="servicios-grid">
+
+            <div class="servicios-grid-izq">
+                <h4>SERVICIOS</h4>
+                <h1>Servicios <br>Innovadores</h1>
+                <p>Optimiza la experiencia de tus usuarios con Plankton Wallet:<br> Seguridad, facilidad y control total.</p>
+                <a>Nuestros Servicios</a>
+            </div>
+
+            <div class="servicios-cuadros-grid">
+
+                <!-- Cuadros Izquierda -->
+                <div class="grid-cuadros-izquierda">
+
+                    <div class="servicios-desarrollo">
+                        <i class="bi bi-code-square"></i>
+                        <h4>Desarrollo</h4>
+                        <p>Wallets intuitivas y seguras a tu medida.</p>
+                    </div>
+
+                    <div class="servicios-seguridad">
+                        <i class="bi bi-fingerprint"></i>
+                        <h4>Seguridad</h4>
+                        <p>Operaciones con AML y KYC.</p>
+                    </div>
+                </div>
+
+                <!-- Cuadros Derecha -->
+                <div class="grid-cuadros-derecha">
+
+                    <div class="servicios-integracion">
+                        <i class="bi bi-credit-card"></i>
+                        <h4>Integración</h4>
+                        <p>Conexiones de pago eficientes.</p>
+                    </div>
+
+                    <div class="servicios-gestion">
+                        <i class="bi bi-shield-check"></i>
+                        <h4>Gestión</h4>
+                        <p>Controla riesgos en tiempo real.</p>
+                    </div>
+                    
+                </div>
+         
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+
+<script>
+ document.addEventListener('DOMContentLoaded', () => {
+  const elementoAMostrar = document.querySelector('.servicios-grid-izq');
+  const elementoAMostrar2 = document.querySelector('.grid-cuadros-izquierda');
+  const elementoAMostrar3 = document.querySelector('.grid-cuadros-derecha');
+
+  // Observadores separados
+  const observer1 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            elementoAMostrar.classList.add('visible');
+          }, 400); // Retraso de 1 segundo
+          observer1.unobserve(elementoAMostrar);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const observer2 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            elementoAMostrar2.classList.add('visible');
+          }, 500); // Retraso de 2 segundos
+          observer2.unobserve(elementoAMostrar2);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const observer3 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            elementoAMostrar3.classList.add('visible');
+          }, 700); // Retraso de 2 segundos
+          observer3.unobserve(elementoAMostrar3);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  observer1.observe(elementoAMostrar);
+  observer2.observe(elementoAMostrar2);
+  observer3.observe(elementoAMostrar3);
+});
+
+</script>

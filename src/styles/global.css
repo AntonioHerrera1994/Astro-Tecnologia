@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+.container{
+    width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-right: 75px;
+    padding-left: 75px;
+}
+
+h1,h2,h3,h4,p, a, ul, span{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+
+
+}
+
+
+@media screen and (min-width:360px) and (max-width:736px) {
+  /*Global */
+  .container {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+      }
+  
+      .wrapper {
+        flex-direction: column;
+      }
+    }
+
+  /********** Post **********/
+  

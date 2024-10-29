@@ -1,0 +1,275 @@
+/********** Animaciones ********/
+.hacemos-izq{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.hacemos-izq.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+.hacemos-anim-h4{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.hacemos-anim-h4.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+.hacemos-anim-h1{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.hacemos-anim-h1.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+.hacemos-anim-p{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.hacemos-anim-p.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+.list-hacemos{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.list-hacemos.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+.button-hacemos{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.button-hacemos.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+
+/********** Global **********/
+.hacemos{
+    background-color: #0F1416;
+    padding-bottom: 20px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-top: 2.6rem;
+}
+
+.hacemos-cont{
+    margin: 0 auto;
+    overflow: hidden;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.hacemos-grid{
+    padding: 2rem;
+    display:grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: 5rem; 
+}
+
+h1{
+    color: white;
+}
+
+/********** Hacemos Izq **********/
+.hacemos-img{
+    width: 90%;
+    height: 90%;
+}
+
+.cuadro-negro{
+    background-color: black;
+    padding:1.4rem 3.4rem 1.4rem 3.4rem;
+    position: absolute;
+    margin-top: -13.6rem;
+    margin-left: 20rem;
+}
+
+.cuadro-negro h2{
+    color: white;
+    font-size: 2.1rem;
+}
+
+/********** Hacemos Der **********/
+
+.hacemos-der{
+margin-top: 11rem;
+margin-left: -11rem;
+}
+
+.hacemos-der h4 {
+    font-size: .78rem;
+    margin-bottom: -1rem;
+    color: #ffffff;
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+
+.hacemos-der p {
+    font-size: 1rem;
+    color: #ffffffa0;
+    line-height: 1.8rem;
+
+}
+
+.hacemos-der h1 {
+      font-size: 3.5rem;
+    margin-bottom: -1rem;
+    color: white;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+}
+
+/********** Lista estilo **********/
+
+.list-hacemos li{
+
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.li-1{
+    margin-bottom: 1.8rem;
+    margin-top: 2.2rem;
+}
+
+.li-2{
+    margin-top: 1.8rem;
+}
+
+.numero-hacemos{
+    color: #ffffffa0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+hr{
+ height: 1px;  
+ border-color: #ffffff16;
+}
+
+.button-hacemos a{
+    border: solid;
+    color: black;
+    border-width: 1px;
+    border-radius: .9rem;
+    border-color: #00f0f1;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    background-color: #00f0f1;
+}
+
+/********** Movil **********/
+
+@media screen and (min-width:300px) and (max-width:800px) {
+    
+    .hacemos-cont{
+        width: auto;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: -2rem;
+        
+    }
+
+    .hacemos-grid{
+        padding: 2rem;
+        display:grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        gap: 0rem; 
+    }
+
+    /********* Hacemoz Izq **********/
+
+    .hacemos-img{
+        width: 95%;
+        height: 90%;
+    }
+
+    /********** Cuadro **********/
+
+    .cuadro-negro{
+        padding:.2rem 1.1rem .2rem 1.1rem;
+        position: absolute;
+        margin-top: -5.2rem;
+        margin-left: 10rem;
+        margin-right: 2.5rem;
+    }
+
+    .cuadro-negro h2{
+        color: white;
+        font-size: 1.1rem;
+    }
+
+
+    /********** Derecha **********/
+
+    .hacemos-der{
+        margin-top: 0rem;
+        margin-left: 0rem;
+        }
+        .hacemos-der h1 {
+        
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            margin-bottom: 2rem;
+            margin-top: 1.6rem;
+        
+        }
+
+        .hacemos-der h4 {
+            font-size: .8rem;
+            margin-bottom: -1rem;
+            
+        }
+        
+        .hacemos-der p {
+            font-size: .9rem;
+            line-height: 1.6rem;
+            margin-top: -1.3rem;
+        }
+
+      /********** Lista estilo **********/
+        
+    .list-hacemos li{
+        font-size: 1.2rem;
+    }
+
+    .li-1{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .li-2{
+        margin-top: 1rem;
+    }
+
+    .button-hacemos a{
+        padding: .9rem 2rem .9rem 2rem;
+        font-weight: 500;
+        font-size: .8rem;
+    }
+}

@@ -1,0 +1,154 @@
+---
+import '../styles/hacemos.css'
+import {Image} from 'astro:assets';
+import HacemosImage from '../assets/hacemos1.jpg';
+---
+
+<section class="hacemos">
+    <div class="hacemos-cont">
+        <div class="hacemos-grid">
+
+            <div class="hacemos-izq">
+                <Image src={HacemosImage} alt="Plankton-Logo" class="hacemos-img" 
+                />
+                <div class="cuadro-negro">
+                    <h2>
+                        Desarrollamos <br>y creamos el <br>futuro.
+                    </h2>
+                </div>
+            </div>
+
+            <div class="hacemos-der">
+
+                <div class="enfoque-txt">
+                    <h4 class="hacemos-anim-h4">
+                        ¿QUÉ HACEMOS?
+                    </h4>
+                    <h1 class="hacemos-anim-h1">
+                        Transformando la Gestión Financiera
+                    </h1>
+                    <p class="hacemos-anim-p">
+                        Plankton Wallet redefine la gestión de tus recursos digitales con soluciones <br>avanzadas y personalizadas.
+                    </p>
+                    
+                    <ul class="list-hacemos">
+                        <li class="li-1"><span class="numero-hacemos">01. </span> KYC/KYB Especializados.</li> 
+                        <hr/>
+                        <li class="li-2"><span class="numero-hacemos">02.</span> Antifraude y AML.</li> 
+                    </ul>
+
+                    <div class="button-hacemos">
+                    <a>Servicios</a>
+                </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+     document.addEventListener('DOMContentLoaded', () => {
+  const hacenmosanimacion1 = document.querySelector('.hacemos-izq');
+  const hacenmosanimacion2 = document.querySelector('.hacemos-anim-h4');
+  const hacenmosanimacion3 = document.querySelector('.hacemos-anim-h1');
+  const hacenmosanimacion4 = document.querySelector('.hacemos-anim-p');
+  const hacenmosanimacion5 = document.querySelector('.list-hacemos');
+  const hacenmosanimacion6 = document.querySelector('.button-hacemos');
+
+  // Observadores separados
+  const observer1 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            hacenmosanimacion1.classList.add('visible');
+          }, 500); // Retraso de 1 segundo
+          observer1.unobserve(hacenmosanimacion1);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const observer2 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            hacenmosanimacion2.classList.add('visible');
+          }, 700); // Retraso de 2 segundos
+          observer2.unobserve(hacenmosanimacion2);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const observer3 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            hacenmosanimacion3.classList.add('visible');
+          }, 800); // Retraso de 2 segundos
+          observer3.unobserve(hacenmosanimacion3);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const observer4 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            hacenmosanimacion4.classList.add('visible');
+          }, 900); // Retraso de 2 segundos
+          observer4.unobserve(hacenmosanimacion4);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const observer5 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            hacenmosanimacion6.classList.add('visible');
+          }, 1000); // Retraso de 2 segundos
+          observer5.unobserve(hacenmosanimacion6);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const observer6 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            hacenmosanimacion5.classList.add('visible');
+          }, 1100); // Retraso de 2 segundos
+          observer6.unobserve(hacenmosanimacion5);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  observer1.observe(hacenmosanimacion1);
+  observer2.observe(hacenmosanimacion2);
+  observer3.observe(hacenmosanimacion3);
+  observer4.observe(hacenmosanimacion4);
+  observer5.observe(hacenmosanimacion5);
+  observer6.observe(hacenmosanimacion6);
+
+});
+</script>

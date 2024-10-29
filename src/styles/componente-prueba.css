@@ -1,0 +1,20 @@
+
+.pruebas-com{
+    background-color: black;
+    margin-top: -16px;
+    margin-bottom: -16px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.card {
+    background-color: black;  }
+  
+  .card:hover .bi {
+    color: white; /* Cambia el color del ícono al pasar el mouse */
+  }
+  
+  .card:hover .text {
+    color: white; /* Cambia el color del texto al pasar el mouse */
+  }
+  

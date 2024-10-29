@@ -1,0 +1,80 @@
+/********** Global **********/
+
+.boletin{
+    background-color: #0F1416;
+    margin-top: -3rem;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -7rem;
+}
+
+.boletin-cont{
+    margin: 0 auto;
+    overflow: hidden;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.boletin-grid{
+    padding: 2rem;
+    display:grid;
+    grid-template-columns: 38% 62%;
+        gap: 5rem; 
+}
+
+/********** Texto Izquierda **********/
+
+.boletin-grid h3{
+    margin-top: -.1rem;
+    color: white;
+    font-size: 3rem ;
+    font-weight:500;
+    margin-right: -3rem;
+}
+
+/********** Widget Derecha **********/
+
+
+#mce-EMAIL::placeholder {
+    font-size: 1.1rem;
+}
+
+.bi-send{
+    font-size: 1.4rem;
+    color: white;
+}
+
+/********* Movil **********/
+@media screen and (min-width:300px) and (max-width:800px) {
+
+    /********** Global **********/
+    .boletin{
+        padding-bottom: 1rem;
+        padding-top: 0;
+        margin-bottom: -3rem;
+    }
+
+    .boletin-cont{
+        width: auto;
+        height: auto;
+        padding-left: 10px;
+        padding-right: 10px; 
+    }
+
+    .boletin-grid{
+        margin-top: -2rem;
+        padding: 2rem;
+        display:grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        gap: 1rem; 
+    }
+
+    /********** Texto Izquierda **********/
+
+    .boletin-grid h3{
+        font-size: 1.3rem;
+        margin-right: -1rem;
+        margin-left: -.5rem;
+    }
+}
+

@@ -1,0 +1,54 @@
+.texto{
+    background-color: #0F1416;
+    padding-bottom: 2.6rem;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-top: 2.6rem;
+}
+
+.texto-cont{
+    margin: 0 auto;
+    overflow: hidden;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.marquee {
+    width: 100%; /* Ancho del contenedor */
+    overflow: hidden; /* Oculta el texto que se sale del contenedor */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  }
+  
+  .marquee p {
+    display: inline-block; /* Permite animar el párrafo */
+    animation: marquee 570s linear infinite; /* Animación personalizada */
+    color: #00f0f1;
+    font-size: 5.2rem;
+    font-weight: 600;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+/********* Movil **********/
+
+@media screen and (min-width:300px) and (max-width:800px) {
+  
+  .texto{
+    padding-bottom: 0;
+    padding-top:0;
+  } 
+
+  .texto-cont{
+    width: auto;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px; 
+  }
+
+  .marquee p {
+    font-size: 3rem;
+  }
+}

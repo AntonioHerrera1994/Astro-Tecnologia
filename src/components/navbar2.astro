@@ -1,0 +1,33 @@
+---
+import '../styles/navbar2.css'
+import {Image} from 'astro:assets';
+import myImageFooter from "../assets/logo-plankton.webp";
+
+---
+
+<div class="content" id="miMenu">
+  <div class="head-grid">
+
+    <div class="head-logo">
+      <a href="/"><Image src={myImageFooter} alt="Plankton-News-Logo" class="header-img"/>
+      </a>
+    </div>
+
+    <div class="nav-links">
+      <a href="/">Inicio</a>
+      <a href="/servicios/">Servicios</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contacto/">Contacto</a>
+      <a href="https://plankton.news/">News</a>
+      <a href="https://planktonwallet.com/" class="ingresar-btn">Ingresar</a>
+    </div> 
+
+
+    <div class="hamburger">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+
+  </div>
+</div>

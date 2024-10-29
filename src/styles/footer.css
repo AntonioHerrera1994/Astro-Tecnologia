@@ -1,0 +1,194 @@
+/********** Global **********/
+.footer{
+    background-color: black;
+    padding-top: 80px;
+    margin-left:-8px;
+    margin-right:-8px;
+    margin-bottom: -8px;
+    padding-bottom: 50px;
+  }
+  
+  .footer-cont{
+    margin: 0 auto;
+  overflow: hidden;
+  padding-right: 50px;
+  padding-left: 50px;
+  }
+  
+  .footer-grid{
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 3rem;
+  }
+
+  /********** Logo **********/
+
+  .footer-img{
+    width: 40%;
+    height: 20%;
+  }
+
+  /********** Contacto **********/
+
+  .footer-contacto h3{
+    color: white;
+  }
+
+  .footer-contacto p{
+    color: #ffffffa0;
+   line-height: 1.6rem;
+  }
+
+  .footer-contacto a{
+    text-decoration: none;
+    color: #ffffffa0;
+  }
+
+  .footer-phone{
+    color: white!important;
+    font-size: 1.3rem;
+  }
+
+  /********** Menu **********/
+
+  .footer-menu h3{
+    color: white;
+  }
+
+  .footer-menu li{
+    color: #ffffffa0;
+  }
+
+
+  /********** Suscribete **********/
+
+  .footer-susc{
+    margin-left: -1rem;
+  }
+
+  .footer-susc h3{
+    color: white;
+  }
+
+  .bi-envelope{
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .required.email::placeholder{
+    font-size: 1rem;
+    
+  }
+
+  /********** Bottom Footer **********/
+
+  .footer-bottom{
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    margin-bottom: -.5rem;
+
+  }
+
+  .footer-bottom p{
+    color: white;
+    margin-left: 8rem;
+    font-size: 1rem;
+    color: #ffffffa0;
+    border-top: solid;
+    border-top-width: 1px;
+    border-top-color: #ffffff5b; 
+    margin-right: 8rem;
+    padding-top: 2rem;
+    margin-top: -3rem;
+  }
+  
+/************** Movil ***************/
+@media screen and (min-width:300px) and (max-width:800px) {
+    
+
+
+    .footer-cont{
+      width: auto;
+      height: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    
+    .footer-grid{
+      padding-right:0;
+      padding-left: 0;
+      margin: 0 auto;
+      display:grid;
+      grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+
+      /********** Logo **********/
+
+  .footer-img{
+    width: 30%;
+    height: 100%;
+  }
+
+   /********** Contacto **********/
+
+   .footer-contacto h3{
+     font-size: 1.1rem;
+     margin-top: -1.4rem;
+  }
+
+  .footer-contacto p{
+    font-size: .9rem;
+    
+  }
+
+  .footer-phone{
+    font-size: 1.1rem;
+  }
+
+    /********** Menu **********/
+
+    .footer-menu h3{
+      font-size: 1.1rem;
+      margin-top: -2rem;
+    }
+
+      /********** Suscribete **********/
+
+  .footer-susc h3{
+      font-size: 1.1rem;
+      margin-top: -3.5rem;
+  }
+
+  .footer-susc{
+    margin-left: 0;
+  }
+
+ /********** Bottom Footer **********/
+
+ .footer-bottom{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
+  margin-bottom: -1rem;
+
+}
+
+.footer-bottom p{
+  margin-left: 1rem;
+  font-size: .9rem;
+  border-top: solid;
+  border-top-width: 1px;
+  border-top-color: #ffffff5b; 
+  margin-right: 8rem;
+  padding-top: 2rem;
+  margin-top: -3rem;
+}
+
+  }

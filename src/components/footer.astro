@@ -1,0 +1,106 @@
+---
+
+
+import '../styles/footer.css'
+import {Image} from 'astro:assets';
+import myImageFooter from '../assets/logo-plankton.webp';
+---
+
+ <footer class="footer">
+  <div class="footer-cont">
+    <div class="footer-grid">
+
+      <div class="footer-logo">
+        <a href="/"><Image src={myImageFooter} alt="Plankton-Logo" class="footer-img" 
+          />
+    </a>
+      </div>
+
+      <div class="footer-contacto">
+      <h3>Contacto</h3>
+
+        <p>
+          C. Tuxpan 63-402, Col. Roma Sur, Cuauhtémoc, Ciudad de México, 06760
+        </p>
+
+        <p>
+          <a class="mail" href="mailto: contacto@planktonwallet.com">contacto@planktonwallet.com</a>
+        </p>
+
+        <p>
+          <a class="footer-phone" href="tel:+526647549475">+52-664-754-9475</a>
+        </p>
+      </div>
+
+      <div class="footer-menu">
+        <h3>Menú</h3>
+        <ul>
+          <li>Inicio</li>
+          <li>Servicios</li>
+          <li>Blog</li>
+          <li>Contacto</li>
+          <li>News</li>
+          <li>Ingresar</li>
+        </ul>
+
+      </div>
+
+      <div class="footer-susc">
+        <h3>Suscríbete al boletín</h3>
+        <div id="mc_embed_shell">
+          <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+      
+            #mc_embed_signup{
+              background:#ffffff00; 
+              false;
+              clear:left; 
+              font:14px Helvetica,Arial,sans-serif; 
+              width: 300px;
+              margin-left: -1.2rem;
+            }
+
+            
+            @media screen and (min-width:300px) and (max-width:800px) {
+              #mc_embed_signup{
+              margin-left: 0;
+            }
+
+            #mc-embedded-subscribe{
+              background-color: #ffffff00;
+              color: white;
+              border: none;
+              margin-top: 1rem;
+            }
+            }
+
+            /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div id="mc_embed_signup">
+        <form action="https://plankton.us17.list-manage.com/subscribe/post?u=7fa58dd770f7521d71ddeaa08&amp;id=0f4349c1b3&amp;f_id=00deb0e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+         
+             
+                <div class="mc-field-group"><!-- <label for="mce-EMAIL" style="color:white">Correo Electrónico <span class="asterisk">*</span></label>-->
+                  <i class="bi bi-envelope"></i>
+                  <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""  style="background-color:#ffffff00; border-top-color:#ffffff00;border-right-color:#ffffff00;border-left-color:#ffffff00;border-bottom-color:#ffffff58;" placeholder="Correo Electrónico"></div>
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display: none;"></div>
+                <div class="response" id="mce-success-response" style="display: none;"></div>
+            </div><div aria-hidden="true" style="position: absolute; left: -5000px;" >
+              <input type="text" name="b_7fa58dd770f7521d71ddeaa08_0f4349c1b3" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Enviar" ></div>
+        </div>
+    </form>
+    </div>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[4]='PHONE';ftypes[4]='phone';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p> Copyright 2024, Plankton Wallet. Aviso de Privacidad. Términos y Condiciones.</p>
+  </div>
+</footer>

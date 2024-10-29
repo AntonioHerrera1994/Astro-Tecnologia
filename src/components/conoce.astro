@@ -1,0 +1,113 @@
+---
+import '../styles/conoce.css'
+import {Image} from 'astro:assets';
+import Conoce1 from '../assets/conoce1.webp';
+import Conoce2 from '../assets/conoce2.webp';
+import Conoce3 from '../assets/conoce3.webp';
+import Conoce4 from '../assets/conoce4.webp';
+---
+
+<section class="conoce">
+    <div class="conoce-cont">
+
+        <div class="conoce-texto">
+            <h4>
+                CONOCE PLANKTON WALLET
+            </h4>
+
+            <h1>
+                Maximiza tu experiencia financiera <br> con nuestra suite de <br>servicios avanzados
+            </h1>
+        </div>
+
+        <div class="conoce-grid">
+
+            <div class="conoce1-img">
+                <Image src={Conoce1} alt="Plankton-Logo" class="conoce1-img" 
+                />
+                <div class="conoce1-txt">Gestión<br> Inteligente</div>
+            </div>
+
+            <div class="conoce2-img">
+                <Image src={Conoce2} alt="Plankton-Logo" class="conoce2-img" 
+                />
+                <div class="conoce2-txt">Pagos Integrados</div>
+            </div>
+
+            <div class="conoce3-img">
+                <Image src={Conoce3} alt="Plankton-Logo" class="conoce3-img" 
+                />
+                <div class="conoce3-txt">Desarrollo de <br>Wallets</div>
+            </div>
+
+            <div class="conoce4-img">
+                <Image src={Conoce4} alt="Plankton-Logo" class="conoce4-img" 
+                />
+                <div class="conoce4-txt">KYC/KYB <br> Avanzados</div>
+            </div>
+            
+        </div>
+
+        <div class="conoce-button">
+            <a>Nuestros Servicios</a>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const comnoceanimacion1 = document.querySelector('.conoce-texto');
+  const comnoceanimacion2 = document.querySelector('.conoce-grid');
+  const comnoceanimacion3 = document.querySelector('.conoce-button');
+
+  // Observadores separados
+  const observer1 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            comnoceanimacion1.classList.add('visible');
+          }, 400); // Retraso de 1 segundo
+          observer1.unobserve(comnoceanimacion1);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const observer2 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            comnoceanimacion2.classList.add('visible');
+          }, 600); // Retraso de 2 segundos
+          observer2.unobserve(comnoceanimacion2);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const observer3 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            comnoceanimacion3.classList.add('visible');
+          }, 800); // Retraso de 2 segundos
+          observer3.unobserve(comnoceanimacion3);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+
+  observer1.observe(comnoceanimacion1);
+  observer2.observe(comnoceanimacion2);
+  observer3.observe(comnoceanimacion3);
+
+});
+</script>

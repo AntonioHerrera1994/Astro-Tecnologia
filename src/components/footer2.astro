@@ -1,0 +1,63 @@
+---
+import '../styles/footer2.css'
+import {Image} from 'astro:assets';
+import myImageFooter2 from '../assets/logo-plankton.webp';
+---
+
+<section class="footer2">
+    <div class="footer2-cont">
+
+        <div class="footer2-grid">
+
+            <div>
+                <div class="footer-logo2">
+                    <a href="/"><Image src={myImageFooter2} alt="Plankton-Logo" class="footer-img2" 
+                      />
+                </a>
+                  </div>
+            </div>
+
+            <div>
+                <h1>Tu Futuro Financiero <br>Empieza Aquí</h1>
+                <div class="sub-grid-menu">
+
+                    <div>
+                        <h3>Redes Sociales</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>X</li>
+                            <li>Instagram</li>
+                            <li>Linkedin</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Menu</h3>
+
+                        <ul>
+                            <li>Inicio</li>
+                            <li>Servicios</li>
+                            <li>Blog</li>
+                            <li>Contacto</li>
+                            <li>News</li>
+                            <li>Ingresar</li>
+                        </ul>
+                    </div>
+
+                    <div class="contacto-secc">
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li>contacto@planktonwallet.com</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>    
+      
+    </div>
+       <div class="footer-bottom2">
+            <p> Copyright 2024, Plankton Wallet. Aviso de Privacidad. Términos y Condiciones.</p>
+          </div>   
+</section>

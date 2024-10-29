@@ -1,0 +1,155 @@
+/********** Global **********/
+
+h1, h3{
+    color: white;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  li{
+    color: #ffffffa0;
+    line-height: 2.6em;
+  }
+.footer2{
+    background-color: black;
+    padding-top: 100px;
+          margin-left:-8px;
+          margin-right:-8px;
+          margin-bottom: -8px;
+          padding-bottom: 20px;
+}
+
+.footer2-cont{
+    margin: 0 auto;
+  overflow: hidden;
+  padding-right: 110px;
+  padding-left: 110px;
+  }
+  
+  .footer2-grid{
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: 3rem;
+  
+  }
+
+  /********** Seccion Izq **********/
+
+  .footer-logo2{
+     margin-top: 3rem;
+  }
+
+  .footer-img2{
+    width: 20%;
+    height: 100%;
+  }
+
+
+  /********** Seccion Der **********/
+h1{
+  font-size: 3.4rem;
+  margin-top: -2rem;
+  padding-top: 3rem;
+}
+  .sub-grid-menu{
+    display:grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+
+  }
+
+  .contacto-secc{
+    margin-left: -5rem;
+  }
+
+   /********** Bottom Footer **********/
+
+   .footer-bottom2{
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    margin-bottom: -.5rem;
+
+  }
+
+  .footer-bottom2 p{
+    color: white;
+    margin-left: 8rem;
+    font-size: 1rem;
+    color: #ffffffa0;
+    border-top: solid;
+    border-top-width: 1px;
+    border-top-color: #ffffff5b; 
+    margin-right: 8rem;
+    padding-top: 2rem;
+  
+  }
+
+  /*********** Movil *********/
+  @media screen and (min-width:300px) and (max-width:800px) {
+    
+    .footer2-cont{
+      margin: 0 auto;
+      overflow: hidden;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: -3rem;
+    }
+
+    .footer2-grid{
+      display:grid;
+      grid-template-columns: repeat(1,minmax(0,1fr));
+          gap: 2rem;
+    
+    }
+
+    .footer-img2{
+      width: 30%;
+      height: 100%;
+    }
+
+
+      /********** Seccion Der **********/
+
+      h1{
+        font-size: 1.5rem;
+        margin-top: -3.5rem;
+  
+      }
+
+  .sub-grid-menu{
+   
+    display:grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: 1rem;
+  }
+
+  .contacto-secc{
+    margin-left: 0;
+    margin-top: -1rem;
+  }
+
+  .footer-bottom2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    margin-bottom: -1rem;
+  
+  }
+  
+  .footer-bottom2 p{
+    margin-left: 1rem;
+    font-size: .9rem;
+    border-top: solid;
+    border-top-width: 1px;
+    border-top-color: #ffffff5b; 
+    margin-right: 0;
+    padding-top: 2rem;
+  
+  }
+  }

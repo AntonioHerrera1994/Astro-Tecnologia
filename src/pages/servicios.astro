@@ -1,0 +1,60 @@
+---
+import Navbar2 from '../components/navbar2.astro';
+import Footer2 from '../components/footer2.astro';
+import Serviciosdestacados from '../components/serviciosdestacados.astro';
+import Conoce from '../components/conoce.astro';
+import Boletin from '../components/boletin.astro';
+import Texto from '../components/texto.astro';
+import Faq from '../components/faq.astro';
+import Testimoniales from '../components/testimoniales.astro';
+
+
+import '../styles/global.css';
+import '../styles/servicios-page.css';
+---
+
+<html lang="es">
+	<head>
+
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="UTF-8">
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+		
+		<title>Servicios | Tu futuro financiero</title>
+		<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/AntonioHerrera1994/news-astro/master/Favicon-Negro-Blanco.ico">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+		<meta name="description" content="En Plankton News mantente informado de las ultimas noticias del mundo financiero, tecnológico y 
+		crypto">
+        <slot />
+
+	</head>
+	<body>
+		
+		
+        <Navbar2 />
+				
+		<Serviciosdestacados />
+
+		<Conoce />
+		<Boletin />
+		<Texto />
+		<Faq />
+		<Testimoniales />
+		<Footer2 />
+
+	
+	
+		<script>
+			import "../scripts/menu.js";
+		  </script>
+	</body>
+  </html>
+	</body>
+</html>

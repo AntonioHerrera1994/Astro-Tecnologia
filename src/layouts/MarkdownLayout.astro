@@ -1,0 +1,73 @@
+---
+import Footer from '../components/footer.astro';
+const { frontmatter } = Astro.props;
+import '../styles/global.css';
+import '../styles/markdown.css';
+import '../styles/footer.css'
+import {Image} from 'astro:assets';
+
+
+
+
+const { pageTitle } = Astro.props;
+---
+
+    <html lang="es">
+        <head>
+
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta charset="UTF-8">
+            <meta name="generator" content={Astro.generator} />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+            
+            <title>{frontmatter.title} | Tu futuro financiero</title>
+            <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/AntonioHerrera1994/news-astro/master/Favicon-Negro-Blanco.ico">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+            <meta name="description" content="En Plankton News mantente informado de las ultimas noticias del mundo financiero, tecnológico y 
+            crypto">
+      
+            <meta name="description" content={frontmatter.description} >
+            <slot />
+        </head>
+        <body>
+     
+            
+            
+            <div class="postcontent">
+             
+
+                <img src={frontmatter.image.url} width="100%" alt={frontmatter.image.alt} style="margin-top:2rem;"/>
+                <p style="font-size:2rem;">{frontmatter.title}</p>
+                <p style="font-size:.9rem;font-weight:bold;">{frontmatter.author}</p>
+              
+                <slot />
+            </div>
+
+
+  
+            <Footer />
+            <script>
+                import "../scripts/menu.js";
+              </script>
+
+
+              
+            
+        </body>
+      </html>
+        </body>
+    </html>
+    
+
+
+
+
+
+
+  

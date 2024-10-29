@@ -1,0 +1,134 @@
+---
+import '../styles/enfoque.css'
+import {Image} from 'astro:assets';
+import EnfoqueImage from '../assets/enfoque-img1.webp';
+---
+
+<section class="enfoque">
+    <div class="enfoque-cont">
+        <div class="enfoque-grid">
+
+            <!-- Imagen Izquierda -->
+            <div class="enfoque-izquierda">
+                <Image src={EnfoqueImage} alt="Plankton-Logo" class="enfoque-img" 
+                />
+            </div>
+
+            
+             <!-- Texto Izquierda -->
+            <div class="enfoque-derecha">
+
+                <div class="enfoque-txt">
+                <h4 class="animacionh4">NUESTRO ENFOQUE</h4>
+                <h1 class="animacionh1">Compromiso y Seguridad</h1>
+                <p class="animacionp">En Plankton Wallet, tu tranquilidad es nuestra prioridad. Innovamos para ofrecerte:</p>
+
+                <ul class="animacionul">
+                    <li>
+                        <i class="bi bi-check-lg"></i>Seguridad Inquebrantable
+                    </li>
+                    <li>
+                        <i class="bi bi-check-lg"></i>Wallet Personalizada
+                    </li>
+                    <li>
+                        <i class="bi bi-check-lg"></i>Innovación Continua
+                    </li>
+                </ul>
+
+                <a class="animaciona">
+                Contáctanos
+                </a>
+            </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const animacion1 = document.querySelector('.animacionh4');
+  const animacion2 = document.querySelector('.animacionh1');
+  const animacion3 = document.querySelector('.animacionp');
+  const animacion4 = document.querySelector('.animacionul');
+  const animacion5 = document.querySelector('.animaciona');
+
+  // Observadores separados
+  const observer1 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            animacion1.classList.add('visible');
+          }, 400); // Retraso de 1 segundo
+          observer1.unobserve(animacion1);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const observer2 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            animacion2.classList.add('visible');
+          }, 500); // Retraso de 2 segundos
+          observer2.unobserve(animacion2);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const observer3 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            animacion3.classList.add('visible');
+          }, 700); // Retraso de 2 segundos
+          observer3.unobserve(animacion3);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const observer4 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            animacion4.classList.add('visible');
+          }, 900); // Retraso de 2 segundos
+          observer4.unobserve(animacion4);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const observer5 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            animacion5.classList.add('visible');
+          },1100); // Retraso de 2 segundos
+          observer5.unobserve(animacion5);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  observer1.observe(animacion1);
+  observer2.observe(animacion2);
+  observer3.observe(animacion3);
+  observer4.observe(animacion4);
+  observer5.observe(animacion5);
+});
+</script>

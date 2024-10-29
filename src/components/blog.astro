@@ -1,0 +1,150 @@
+---
+import '../styles/blog.css'
+const { pageTitle } = Astro.props;
+const blogs = await Astro.glob('../pages/*/*.mdx');
+
+const sortedFiles = blogs.sort((a, b) => {
+  const bDate = new Date(a.frontmatter.pubDate);
+  const aDate = new Date(b.frontmatter.pubDate);
+
+  return aDate - bDate;
+});
+
+---
+
+<section class="blog-section" id="blog-section">
+  <div class="blog-inicio-cont">
+
+<div class="blog-texto">
+  <h4 class="blog-animacion-h4">
+    BLOG
+</h4>
+
+<h1 class="blog-animacion-h1">
+  Noticias y Perspectivas
+</h1>
+
+<p class="blog-animacion-p">
+  Mantente al día con las últimas tendencias y análisis en criptomonedas.
+</p>
+</div>
+
+
+    <ul class="blogs">
+      {blogs.map((blog) => {
+        // Split description into words and limit to 10
+        const words = blog.frontmatter.description.split(/\s+/);
+        const limitedDescription = words.slice(0, 10).join(' ');
+
+        return (
+          <li>
+            <article class="blog">
+              
+           
+              <h4>{blog.frontmatter.categoria}  &middot;  <span class="date">{blog.frontmatter.date}</span></h4>
+              <a href={blog.url} class=""><h2>{blog.frontmatter.title}</h2></a>
+              <p>{limitedDescription} ...</p>
+              {/* Optionally add "..." to indicate truncated description */}
+              {words.length > 10 && <p></p>}
+            </article>
+          </li>
+        );
+      })}
+    </ul>
+
+    <div class="button-blog">
+        <a>Ver todo</a>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+const bloganimacion1 = document.querySelector('.blog-animacion-h4');
+const bloganimacion2 = document.querySelector('.blog-animacion-h1');
+const bloganimacion3 = document.querySelector('.blog-animacion-p');
+const bloganimacion4 = document.querySelector('.blogs');
+const bloganimacion5 = document.querySelector('.button-blog');
+
+
+// Observadores separados
+const observer1 = new IntersectionObserver(
+ (entries) => {
+   entries.forEach((entry) => {
+     if (entry.isIntersecting) {
+       setTimeout(() => {
+        bloganimacion1.classList.add('visible');
+       }, 500); // Retraso de 1 segundo
+       observer1.unobserve(bloganimacion1);
+     }
+   });
+ },
+ { threshold: 0.1 }
+);
+
+const observer2 = new IntersectionObserver(
+ (entries) => {
+   entries.forEach((entry) => {
+     if (entry.isIntersecting) {
+       setTimeout(() => {
+        bloganimacion2.classList.add('visible');
+       }, 700); // Retraso de 2 segundos
+       observer2.unobserve(bloganimacion2);
+     }bloganimacion2
+   });
+ },
+ { threshold: 0.1 }
+);
+
+const observer3 = new IntersectionObserver(
+ (entries) => {
+   entries.forEach((entry) => {
+     if (entry.isIntersecting) {
+       setTimeout(() => {
+        bloganimacion3.classList.add('visible');
+       }, 800); // Retraso de 2 segundos
+       observer3.unobserve(bloganimacion3);
+     }
+   });
+ },
+ { threshold: 0.1 }
+);
+
+const observer4 = new IntersectionObserver(
+ (entries) => {
+   entries.forEach((entry) => {
+     if (entry.isIntersecting) {
+       setTimeout(() => {
+        bloganimacion4.classList.add('visible');
+       }, 900); // Retraso de 2 segundos
+       observer4.unobserve(bloganimacion4);
+     }
+   });
+ },
+ { threshold: 0.1 }
+);
+
+const observer5 = new IntersectionObserver(
+ (entries) => {
+   entries.forEach((entry) => {
+     if (entry.isIntersecting) {
+       setTimeout(() => {
+        bloganimacion5.classList.add('visible');
+       }, 1000); // Retraso de 2 segundos
+       observer5.unobserve(bloganimacion5);
+     }
+   });
+ },
+ { threshold: 0.1 }
+);
+
+
+observer1.observe(bloganimacion1);
+observer2.observe(bloganimacion2);
+observer3.observe(bloganimacion3);
+observer4.observe(bloganimacion4);
+observer5.observe(bloganimacion5);
+
+});
+</script>

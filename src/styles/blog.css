@@ -1,0 +1,221 @@
+/********** Animaciones ********/
+.blog-animacion-h4{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.blog-animacion-h4.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+.blog-animacion-h1{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.blog-animacion-h1.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+.blog-animacion-p{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.blog-animacion-p.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+.blogs{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.blogs.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+
+.button-blog{
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.button-blog.visible{
+    opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición suave */
+}
+/********** Global **********/
+.blog-section{
+    background-color: #0F1416;
+    padding-bottom: 20px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-top: 2.6rem;
+}
+
+.blog-inicio-cont{
+    margin: 0 auto;
+    overflow: hidden;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.blogs{
+    padding: 2rem;
+    display:grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap:2rem;   
+}
+
+/********** Blog Texto **********/
+
+.blog-texto{
+    text-align: center;
+}
+
+.blog-texto h4 {
+    font-size: .78rem;
+    color: #ffffff;
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+
+.blog-texto p {
+    font-size: .97rem;
+    font-weight: normal;
+      color: #ffffffa0;
+      line-height: 1.8rem;
+      margin-bottom: .7rem;
+}
+
+.blog-texto h1 {
+    font-size: 3.5rem;
+    margin-bottom: -1rem;
+    color: white;
+    line-height: 4rem;
+    margin-bottom: -.3rem;
+    margin-top: 1.5rem;
+}
+
+/********** Blog Style **********/
+
+.blog a{
+    text-decoration: none;
+}
+
+.blog h4{
+    color: #ffffff;
+    font-size: .8rem;
+    word-spacing: .5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.blog .date{
+    color: #ffffffa0;
+    word-spacing: 0;
+    text-transform: none;
+}
+
+.blog h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.blog p{
+    color: #ffffffa0;
+}
+
+.blog{
+    background-color: #191f26;
+    padding:4rem;
+}
+
+.button-blog{
+    margin-bottom: 2rem;
+    display: flex;
+      justify-content: center;
+      font-weight: 500;
+    }
+    
+    .button-blog a{
+        border: solid;
+        color: black;
+        border-width: 1px;
+        border-radius: .9rem;
+        border-color: #00f0f1;
+        padding: 1.2rem 2rem 1.2rem 2rem;
+        background-color: #00f0f1;
+        margin-top: -3rem;
+    }
+
+    @media screen and (min-width:300px) and (max-width:800px) {
+        .blog-inicio-cont{
+            width: auto;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -1rem;
+        }
+
+        .blogs{
+            padding: 2rem;
+            display:grid;
+            grid-template-columns: repeat(1,minmax(0,1fr));
+            gap:2rem;
+                
+        }
+
+        /********** Blog Texto **********/
+
+        .blog-texto h4 {
+            font-size: .8rem;
+        }
+
+        .blog-texto p {
+          font-size: .9rem;
+          margin-top: -1rem;
+          margin-left: 2rem;
+          margin-right: 2rem;
+        }
+
+        .blog-texto h1 {
+            font-size: 1.6rem;
+            margin-top: -1.5rem;
+            margin-bottom: 0;
+        }
+
+        /********** Blog Style *********/
+
+        .blog{
+            margin-left: -2rem;
+            margin-right: -2rem;
+            padding:2rem;
+        }
+
+        .blog h2{
+            margin-top: -.7rem;
+            font-size: 1.5rem;
+        }
+
+        .blog p{
+           font-size: .9rem;
+           line-height: 1.4rem;
+        }
+
+        .button-blog a{
+            padding: .9rem 2rem .9rem 2rem;
+            font-weight: 500;
+            font-size: .8rem;
+        }
+        
+    }

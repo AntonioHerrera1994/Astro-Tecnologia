@@ -1,0 +1,41 @@
+.postcontent{
+    background-color: #e8eadf;
+      margin: 0 auto;
+    overflow: hidden;
+    padding-right: 10rem;
+    padding-left: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  
+  .postcontent h1{
+    text-align: center;
+  }
+  
+  @media screen and (min-width:300px) and (max-width:800px) {
+    .postcontent{
+      padding-top: 1.3rem;
+      width: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  
+  img{
+    width: 100%;
+  }
+  }
+  
+  /*************** Iphone *************/
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      .postcontent{
+      width: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  }

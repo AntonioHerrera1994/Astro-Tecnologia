@@ -1,0 +1,56 @@
+.logos{
+    background-color: #0F1416;
+    padding-bottom: 20px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-top: 2.6rem;
+}
+
+.logos-cont{
+    margin: 0 auto;
+    overflow: hidden;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.logos-grid{
+    width: 100%;
+    padding: 2rem;
+    display:grid;
+    grid-template-columns: repeat(7,minmax(0,1fr));
+        gap: 2rem; 
+}
+
+.logos-img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+
+}
+
+
+.logos-img:hover{
+   opacity:1;
+   transition: .5s;
+}
+
+/************** Movil ***************/
+@media screen and (min-width:300px) and (max-width:800px) {
+
+    .logos-cont{
+        width: auto;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 2rem;
+        }
+
+        .logos-grid{
+            padding: 0;
+            display:grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+                gap: 2rem; 
+        }
+}
+
+
