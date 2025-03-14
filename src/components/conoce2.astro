@@ -7,10 +7,10 @@ import ConoceI3 from '../assets/conoce3.webp';
 import ConoceI4 from '../assets/conoce4.webp';
 ---
 
-<section class="conoce">
-    <div class="conoce-cont">
+<section class="conoce2">
+    <div class="conoce-cont2">
 
-        <div class="conoce-texto">
+        <div class="conoce-texto2">
             <h4>
                 CONOCE PLANKTON WALLET
             </h4>
@@ -20,30 +20,30 @@ import ConoceI4 from '../assets/conoce4.webp';
             </h1>
         </div>
 
-        <div class="conoce-grid">
+        <div class="conoce-grid2">
 
-            <div class="conoce1-img">
-                <Image src={ConoceI1} alt="Plankton-Logo" class="conoce1-img" 
+            <div class="conoce1-img2">
+                <Image src={ConoceI1} alt="Plankton-Logo" class="conoce1-img2" 
                 />
-                <div class="conoce1-txt">Gestión<br> Inteligente</div>
+                <div class="conoce1-txt2">Gestión<br> Inteligente</div>
             </div>
 
-            <div class="conoce2-img">
-                <Image src={ConoceI2} alt="Plankton-Logo" class="conoce2-img" 
+            <div class="conoce2-img2">
+                <Image src={ConoceI2} alt="Plankton-Logo" class="conoce2-img2" 
                 />
-                <div class="conoce2-txt">Pagos Integrados</div>
+                <div class="conoce2-txt2">Pagos Integrados</div>
             </div>
 
-            <div class="conoce3-img">
-                <Image src={ConoceI3} alt="Plankton-Logo" class="conoce3-img" 
+            <div class="conoce3-img2">
+                <Image src={ConoceI3} alt="Plankton-Logo" class="conoce3-img2" 
                 />
-                <div class="conoce3-txt">Desarrollo de <br>Wallets</div>
+                <div class="conoce3-txt2">Desarrollo de <br>Wallets</div>
             </div>
 
-            <div class="conoce4-img">
-                <Image src={ConoceI4} alt="Plankton-Logo" class="conoce4-img" 
+            <div class="conoce4-img2">
+                <Image src={ConoceI4} alt="Plankton-Logo" class="conoce4-img2" 
                 />
-                <div class="conoce4-txt">KYC/KYB <br> Avanzados</div>
+                <div class="conoce4-txt2">KYC/KYB <br> Avanzados</div>
             </div>
             
         </div>
@@ -53,47 +53,47 @@ import ConoceI4 from '../assets/conoce4.webp';
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-  const comnoceanimacion1 = document.querySelector('.conoce-texto');
-  const comnoceanimacion2 = document.querySelector('.conoce-grid');
-  const comnoceanimacion3 = document.querySelector('.conoce-button');
+  const comnoceanimacion12 = document.querySelector('.conoce-texto2');
+  const comnoceanimacion22 = document.querySelector('.conoce-grid2');
+  const comnoceanimacion32 = document.querySelector('.conoce-button2');
 
   // Observadores separados
-  const observer1 = new IntersectionObserver(
+  const observer12 = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setTimeout(() => {
-            comnoceanimacion1.classList.add('visible');
+            comnoceanimacion12.classList.add('visible');
           }, 400); // Retraso de 1 segundo
-          observer1.unobserve(comnoceanimacion1);
+          observer12.unobserve(comnoceanimacion12);
         }
       });
     },
     { threshold: 0.1 }
   );
 
-  const observer2 = new IntersectionObserver(
+  const observer22 = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setTimeout(() => {
-            comnoceanimacion2.classList.add('visible');
+            comnoceanimacion22.classList.add('visible');
           }, 600); // Retraso de 2 segundos
-          observer2.unobserve(comnoceanimacion2);
+          observer22.unobserve(comnoceanimacion22);
         }
       });
     },
     { threshold: 0.1 }
   );
 
-  const observer3 = new IntersectionObserver(
+  const observer32 = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setTimeout(() => {
-            comnoceanimacion3.classList.add('visible');
+            comnoceanimacion32.classList.add('visible');
           }, 800); // Retraso de 2 segundos
-          observer3.unobserve(comnoceanimacion3);
+          observer32.unobserve(comnoceanimacion32);
         }
       });
     },
@@ -101,9 +101,9 @@ import ConoceI4 from '../assets/conoce4.webp';
   );
 
 
-  observer1.observe(comnoceanimacion1);
-  observer2.observe(comnoceanimacion2);
-  observer3.observe(comnoceanimacion3);
+  observer12.observe(comnoceanimacion12);
+  observer22.observe(comnoceanimacion22);
+  observer32.observe(comnoceanimacion32);
 
 });
 </script>
