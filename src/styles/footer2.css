@@ -86,7 +86,8 @@ h1{
     border-top-color: #ffffff5b; 
     margin-right: 8rem;
     padding-top: 2rem;
-  
+    overflow: hidden;
+    margin: 0 auto;
   }
 
   /*********** Movil *********/
